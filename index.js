@@ -91,7 +91,7 @@ t.addEventListener("click",()=>{
     t.classList.toggle('change');
     if(t.classList.contains('change'))
     {
-        v.style.backgroundColor='grey';
+        v.style.color='black';
         body.style.backgroundColor='grey';
         b.style.backgroundColor='grey';
         b.style.boxShadow='1px 1px 10px black';
@@ -99,7 +99,7 @@ t.addEventListener("click",()=>{
     }
     else
     {
-        v.style.backgroundColor='';
+         v.style.color='';
         body.style.backgroundColor='';
         b.style.backgroundColor='';
         b.style.boxShadow='';

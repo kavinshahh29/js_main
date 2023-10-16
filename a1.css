@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5; /* Light gray background color */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: plum ;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%; /* Adjusted for responsiveness */
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    width: 90%; /* Adjusted for responsiveness */
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.count h5 {
+    font-size: 18px;
+    color: #333;
+}
+
+.count p {
+    font-size: 14px;
+    color: #666;
+}
+
+.audio-controls {
+    display: flex;
+    flex-direction: column; /* Adjusted for responsiveness */
+    align-items: center; /* Adjusted for responsiveness */
+}
+
+select {
+    width: 100%; /* Adjusted for responsiveness */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0; /* Adjusted for responsiveness */
+}
+
+button {
+    background-color: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%; /* Adjusted for responsiveness */
+    margin: 10px 0; /* Adjusted for responsiveness */
+}
+
+button:hover {
+    background-color: #ff0040; /* Darker shade when hovered */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container, .count {
+        width: 95%; /* Adjusted for smaller screens */
+    }
+}

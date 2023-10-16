@@ -10,6 +10,7 @@ body{
     align-items: center;
     min-height:100vh;
     background-color: #2f363e;
+    flex-direction: column;
 }
 .box{
     position:relative;
@@ -70,8 +71,7 @@ h2{
 .box li i{
     position: absolute;
     right:-30px;
-    width:20px;
-    height:20px;
+    width:19px;
     background-color:#2f363e;
 }
 .box li i::before{
