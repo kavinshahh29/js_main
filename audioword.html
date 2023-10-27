@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Audio Converter</title>
+    <script src="script.js" defer></script>
+    
+<link rel="stylesheet" href="audioword1.css">
+<link rel="stylesheet" href="audioword2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <textarea id="input-textarea" placeholder="Please Start Typing..."></textarea>
+        </div>
+        <div class="count">
+            <div>
+                <h5 id="word-count">0</h5>
+                <p>WORDS</p>
+            </div>
+            <div>
+                <h5 id="character-count">0</h5>
+                <p>CHARACTERS</p>
+            </div>
+        </div>
+        <div class="audio-controls">
+            <select id="voice-select"></select>
+            <button id="convert-button" style="width: 151px;">Convert to Audio</button>
+        </div>
+    </div>
+       
+</body>
+</html>
