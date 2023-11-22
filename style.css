@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color: #2f363e;
+    flex-direction: column;
+}
+.box{
+    position:relative;
+    width:450px;
+    height:550px;
+    padding:20px;
+    background-color: #2f363e;
+    box-shadow: 25px 25px 75px #2a2c2e,
+                10px 10px 10px  #2a2c2e,
+                inset 5px 5px 10px #23272c;
+    border-radius: 25px;
+}
+h2{
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    color:white;
+}
+#inputBox{
+    margin-top:10px;
+    width:100%;
+    position:relative;
+    padding:15px 20px;
+    border-radius: 25px;
+    font-size: 1em; 
+    box-shadow: 5px 5px 10px #20252b,inset 1px 1px 10px #11101077;
+}
+.box li{
+    margin:15px 0;
+    width:calc(100% - 40px);
+    padding:10px 10px 10px 40px;
+    position:relative;
+    display: flex;
+    font-size: 1.2em;
+    cursor: pointer;
+    color:white;
+    background-color: rgba(48, 93, 134, 0.814);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #20252b,inset 1px 1px 10px #11101077;
+    overflow-wrap: anywhere;
+}
+.box li.done
+{
+    background-color: white;
+    color:black;
+}
+.box li.done:after{
+    content:'';
+    position:absolute;
+    left:12px;
+    width:10px;
+    height:6px;
+    border-left: 2px solid white;
+    margin-top:7px;
+    border-bottom: 2px solid white;
+    transform:rotate(315deg);
+}
+.box li i{
+    position: absolute;
+    right:-30px;
+    width:19px;
+    background-color:#2f363e;
+}
+.box li i::before{
+    content:'';
+    position:absolute;
+    width:17px;
+    height:2px;
+    background-color: white;
+    transform:rotate(45deg);
+     margin-top: 10px;
+}
+.box li i::after{
+    content:'';
+    position:absolute;
+    width:17px;
+    height:2px;
+    background-color: white;
+    transform:rotate(-45deg);
+    margin-top: 10px;
+}
+.box li::before{
+    content:'';
+    position:absolute;
+    left:8px;
+    width:20px;
+    height:20px;
+    background-color: #2f363e;
+    border-radius: 50%;
+    margin-top:2px;
+}
+#list{
+    position:relative;
+    height:400px;
+    overflow-y:auto;
+}
+.toastBox{
+    position:absolute;
+    bottom:50px;
+    right:10px;
+    display:flex;
+    align-items:flex-end;
+    flex-direction: column;
+    overflow:hidden;
+    padding:10px;
+}
+.tst{
+    width:200px;
+    height:50px;
+    background:white;
+    text-align: center;
+    padding:14px;
+    font-weight:600;
+    margin:10px 0;
+    box-shadow:5px 5px 10px #20252b,inset 1px 1px 10px #11101077;
+    position:relative;
+}
+.tst::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:5px;
+    background:green;
+    animation:anim 2.5s linear forwards;
+}
+@keyframes anim{
+    100%{
+        width:0;
+    }
+}
+
